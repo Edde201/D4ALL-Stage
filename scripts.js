@@ -761,3 +761,11 @@ function isCollide(object1, object2){
   const b = object2.getBoundingClientRect()
   return !(((a.top + a.height) < (b.top)) || (a.top > (b.top + b.height)) || ((a.left + a.width) < b.left) || (a.left > (b.left + b.width)))
 }
+
+
+
+
+
+/*
+* Cambio para GitHub
+*/
