@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D4ALL Riders</title>
+  <link rel="icon" href="./images/Sunset_Riders_Logo.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+</head>
+<body id="body">
+
+  <div id="inicioDeJuego">Press to Start: Enter</div>
+
+  <div id="ecenario">
+    <div id="soundsDamageEnemi"></div>
+    <div id="soundsDamageAllies"></div>
+    <div id="soundsDamageBonus"></div>
+    <div id="pointsHits">HIT: 0</div>
+    <div id="moneyPoints">$0</div>
+    <!-- LEFT -->
+    <div class="border_top ubi_left_top">
+    <!-- Enemi -->
+      <div class="position_left_top 1 animation imgEnemi" style="display: none;"></div>
+      <div class="position_left_top 11 animation allies" style="display: none;"></div>
+      <div class="position_left_top 111 animation bonus" style="display: none;"></div>
+    </div>
+    <!-- See -->
+    <div class="position_left_top border_top ubi_left_top triggerAnimation"></div>
+    <div class="position_left_top border_top ubi_left_top" id="1"></div>
+
+    <div class="border_center ubi_left_center">
+    <!-- Enemi -->
+      <div class="position_left 4 animation imgEnemi" style="display: none;"></div>
+      <div class="position_left 44 animation allies" style="display: none;"></div>
+      <div class="position_left 444 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_left border_center ubi_left_center triggerAnimation"></div>
+    <div class="position_left border_center ubi_left_center" id="4"></div>
+
+    <div class="border_bottom ubi_left_bottom">
+    <!-- Enemi -->
+      <div class="position_left_bottom 6 animation imgEnemi" style="display: none;"></div>
+      <div class="position_left_bottom 66 animation allies" style="display: none;"></div>
+      <div class="position_left_bottom 666 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_left_bottom border_bottom ubi_left_bottom triggerAnimation"></div>
+    <div class="position_left_bottom border_bottom ubi_left_bottom" id="6"></div>
+
+    <!-- RIGHT -->
+
+    <div class="border_top ubi_right_top">
+    <!-- Enemi -->
+      <div class="position_right_top 3 animation imgEnemi" style="display: none;"></div>
+      <div class="position_right_top 33 animation allies" style="display: none;"></div>
+      <div class="position_right_top 333 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_right_top border_top ubi_right_top triggerAnimation"></div>
+    <div class="position_right_top border_top ubi_right_top" id="3"></div>
+
+    <div class="border_center ubi_right_center">
+      <!-- Enemi -->
+      <div class="position_right 5 animation imgEnemi" style="display: none;"></div>
+      <div class="position_right 55 animation allies" style="display: none;"></div>
+      <div class="position_right 555 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_right border_center ubi_right_center triggerAnimation"></div>
+    <div class="position_right border_center ubi_right_center" id="5"></div>
+
+    <div class="border_bottom ubi_right_bottom">
+      <!-- Enemi -->
+      <div class="position_right_bottom 8 animation imgEnemi" style="display: none;"></div>
+      <div class="position_right_bottom 88 animation allies" style="display: none;"></div>
+      <div class="position_right_bottom 888 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_right_bottom border_bottom ubi_right_bottom triggerAnimation"></div>
+    <div class="position_right_bottom border_bottom ubi_right_bottom" id="8"></div>
+
+    <!-- CENTER -->
+
+    <div class="border_top ubi_top_center">
+    <!-- Enemi -->
+      <div class="position_top 2 animation imgEnemi" style="display: none;"></div>
+      <div class="position_top 22 animation allies" style="display: none;"></div>
+      <div class="position_top 222 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_top border_top ubi_top_center triggerAnimation"></div>
+    <div class="position_top border_top ubi_top_center" id="2"></div>
+
+    <div class="border_bottom ubi_bottom_center">
+    <!-- Enemi -->
+      <div class="position_bottom 7 animation imgEnemi" style="display: none;"></div>
+      <div class="position_bottom 77 animation allies" style="display: none;"></div>
+      <div class="position_bottom 777 animation bonus" style="display: none;"></div>
+    </div>
+
+    <!-- See -->
+    <div class="position_bottom border_bottom ubi_bottom_center triggerAnimation"></div>
+    <div class="position_bottom border_bottom ubi_bottom_center" id="7"></div>
+  </div>
+
+  <div id="results">
+    <div id="resultsHitsEnemis"></div>
+    <div id="resultsHitsAllies"></div>
+    <div id="resultsHitsBonus"></div>
+    <div id="resultsTotal"></div>
+    <div id="restart"></div>
+  </div>
+
+
+</body>
+</html>
