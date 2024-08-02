@@ -5,106 +5,18 @@
   font-style: normal;
 }
 
-body
-{
+body{
   background-image: url(./images/fondo.png);
   margin: auto;
   padding: 0;
   background-attachment: fixed;
   background-size: 100% 100%;
+	overflow: hidden;
 }
 
 img{
   width: 120px;
   height: 140px;
-}
-
-
-@media screen and (max-height: 3500px) {
-    #pointsHits {
-      font-size: 200px;
-    }
-    #moneyPoints {
-      font-size: 200px;
-    }
-    #inicioDeJuego {
-      font-size: 200px;
-    }
-    #results{
-      font-size: 200px;
-    }
-}
-
-@media screen and (max-height: 3000px) {
-    #pointsHits {
-      font-size: 170px;
-    }
-    #moneyPoints {
-      font-size: 170px;
-    }
-    #inicioDeJuego {
-      font-size: 170px;
-    }
-    #results{
-      font-size: 170px;
-    }
-}
-
-@media screen and (max-height: 2500px) {
-    #pointsHits {
-      font-size: 140px;
-    }
-    #moneyPoints {
-      font-size: 140px;
-    }
-    #inicioDeJuego {
-      font-size: 140px;
-    }
-    #results{
-      font-size: 140px;
-    }
-}
-@media screen and (max-height: 2000px) {
-    #pointsHits {
-      font-size: 115px;
-    }
-    #moneyPoints {
-      font-size: 115px;
-    }
-    #inicioDeJuego {
-      font-size: 115px;
-    }
-    #results{
-      font-size: 115px;
-    }
-}
-@media screen and (max-height: 1450px) {
-    #pointsHits {
-      font-size: 95px;
-    }
-    #moneyPoints {
-      font-size: 95px;
-    }
-    #inicioDeJuego {
-      font-size: 95px;
-    }
-    #results{
-      font-size: 95px;
-    }
-}
-@media screen and (max-height: 1100px) {
-  #pointsHits {
-    font-size: 73px;
-  }
-  #moneyPoints {
-    font-size: 73px;
-  }
-  #inicioDeJuego {
-    font-size: 73px;
-  }
-  #results{
-    font-size: 73px;
-  }
 }
 
 #pointsHits{
@@ -116,7 +28,6 @@ img{
   top: 6.5%;
   left: 3.2%;
 }
-
 
 #moneyPoints{
   font-family: Sunset;
@@ -131,9 +42,13 @@ img{
 #inicioDeJuego{
   font-family: Sunset;
   position: absolute;
-  bottom: 29%;
-  left: 35%;
   color: #FFD700;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 150px;
+	width: max-content;
+	font-size: min(10vw, 80px);
 }
 
 #results{
@@ -148,179 +63,143 @@ img{
   display: none;
 }
 
-@keyframes animation
-{
-  0%
-  {
+@keyframes animation{
+  0%{
     transform: translateY(250px);
   }
 
-  8%
-  {
+  8%{
     transform: inherit;
   }
 
-  95%
-  {
+  95%{
     transform: inherit;
   }
 
-  100%
-  {
+  100%{
     transform: translateY(250px);
   }
 }
 
-
-.border_center
-{
+.border_center{
   width: 165px;
   height: 195px;
   position: absolute;
   overflow: hidden;
 }
 
-.border_bottom
-{
+.border_bottom{
   width: 200px;
   height: 236px;
   position: absolute;
   overflow: hidden;
 }
 
-.border_top
-{
+.border_top{
   width: 120px;
   height: 140px;
   position: absolute;
   overflow: hidden;
 }
 
-
-
-/* Posicion LEFT */
-
-.ubi_left_top
-{
+/* Position LEFT */
+.ubi_left_top{
   left: 15%;
   bottom: 60%;
 }
 
-.ubi_left_center
-{
+.ubi_left_center{
   bottom: 36.6%;
 }
 
-.ubi_left_bottom
-{
+.ubi_left_bottom{
   bottom: 0%;
   right: 75%;
 }
 
-.position_left_top
-{
+.position_left_top{
   width: 120px;
   height: 140px;
   background-repeat: no-repeat;
   background-size: 118px;
 }
 
-.position_left
-{
+.position_left{
   width: 165px;
   height: 195px;
   background-size: 165px;
   background-repeat: no-repeat;
-
 }
 
-.position_left_bottom
-{
+.position_left_bottom{
   width: 200px;
   height: 236px;
   background-repeat: no-repeat;
   background-size: 200px;
 }
 
-
-
-/* Posicion CENTER */
-
-.ubi_top_center
-{
+/* Position CENTER */
+.ubi_top_center{
   left: 50%;
   bottom: 60%;
 }
 
-.position_top
-{
+.position_top{
   width: 120px;
   height: 140px;
   background-repeat: no-repeat;
   background-size: 118px;
 }
 
-.ubi_bottom_center
-{
+.ubi_bottom_center{
   bottom: 0%;
   left: 45%;
 }
 
-.position_bottom
-{
+.position_bottom{
   width: 200px;
   height: 236px;
   background-repeat: no-repeat;
   background-size: 200px;
 }
 
-
-/* Posicion RIGHT */
-
-.ubi_right_top
-{
+/* Position RIGHT */
+.ubi_right_top{
   bottom: 60.3%;
   right: 10%;
 }
 
-.position_right_top
-{
+.position_right_top{
   width: 120px;
   height: 140px;
   background-repeat: no-repeat;
   background-size: 118px;
 }
 
-.ubi_right_center
-{
+.ubi_right_center{
   bottom: 37%;
   left: 90%;
 }
 
-.position_right
-{
+.position_right{
   width: 165px;
   height: 195px;
   background-repeat: no-repeat;
   background-size: 165px;
 }
 
-.ubi_right_bottom
-{
+.ubi_right_bottom{
   bottom: 0%;
   right: 10%;
 }
 
-.position_right_bottom
-{
+.position_right_bottom{
   width: 200px;
   height: 236px;
   background-repeat: no-repeat;
   background-size: 200px;
 }
-/* Animaciones */
 
-#animation
-{
-translate: y;
+#animation{
+	translate: y;
 }
